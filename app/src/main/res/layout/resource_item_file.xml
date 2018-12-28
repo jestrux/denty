@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#fff"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/resource_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Resource Title"
+            android:textColor="#555"
+            android:fontFamily="@font/fsans"/>
+
+        <TextView
+            android:id="@+id/resource_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="tutorial_notes.pdf"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="right"
+        android:id="@+id/resource_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_resource_file"
+        android:tint="#000"
+        android:layout_marginRight="16dp"/>
+</FrameLayout>

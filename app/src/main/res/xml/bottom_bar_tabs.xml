@@ -1,0 +1,21 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="Home" />
+
+    <tab
+        id="@+id/tab_schedule"
+        icon="@drawable/ic_schedule"
+        title="Schedule" />
+
+    <tab
+        id="@+id/tab_refs"
+        icon="@drawable/ic_resources"
+        title="Resources" />
+
+    <tab
+        id="@+id/tab_todos"
+        icon="@drawable/ic_todos"
+        title="Activities" />
+</tabs>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.akilsw.waky.denti.StartActivity"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Denty"
+            android:textColor="#000"
+            android:textSize="60dp"
+            android:fontFamily="@font/fsans_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Please add atleast three subjects to continue."
+            android:textSize="20dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:fontFamily="@font/fsans_light"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:lineSpacingExtra="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"
+            android:layout_marginTop="24dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/subjectsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ADD NEW SUBJECT"
+                android:background="#8ddd"
+                android:layout_marginRight="8dp"
+                android:textColor="#333"
+                android:padding="16dp"
+                android:onClick="createSubject"/>
+
+            <TextView
+                android:id="@+id/startBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="GET STARTED"
+                android:background="#444"
+                android:textColor="#fff"
+                android:padding="16dp"
+                android:onClick="getStarted"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

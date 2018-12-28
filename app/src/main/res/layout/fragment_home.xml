@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    android:id="@+id/home_fragment_wrapper"
+    tools:context=".ui.HomeFragment">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:paddingTop="75dp"
+        android:paddingBottom="28dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="36dp"
+        android:text="Student Buddy"
+        android:textColor="#000"
+        android:fontFamily="@font/fsans_black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#fff">
+        <TextView
+            android:layout_margin="1dp"
+            android:fitsSystemWindows="true"
+            android:id="@+id/page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:textSize="35dp"
+            android:text="Student Buddy"
+            android:gravity="center"
+            android:textColor="#000"
+            android:fontFamily="@font/fsans_black"/>
+
+        <TextView
+            android:layout_margin="1dp"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Your very own personal assistant."
+            android:gravity="center"
+            android:textColor="#000"
+            android:fontFamily="@font/fsans_light"/>
+    </LinearLayout>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="1dp"
+        android:background="#f0f0f0">
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:onClick="menuClicked"
+            android:id="@+id/menu_item_subjects">
+
+            <TextView
+                android:id="@+id/subject_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="40dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="-12dp"
+                android:textColor="#861cbf"
+                android:fontFamily="@font/fsans_bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:fontFamily="@font/fsans_bold"
+                android:id="@+id/menu_subjects"
+                android:text="Subjects" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:fontFamily="@font/fsans_light"
+                android:gravity="center"
+                android:text="List of your subjects."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:onClick="menuClicked"
+            android:id="@+id/menu_item_sessions">
+
+            <TextView
+                android:id="@+id/sessions_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="40dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="-12dp"
+                android:textColor="#2dc0de"
+                android:fontFamily="@font/fsans_bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:fontFamily="@font/fsans_bold"
+                android:id="@+id/menu_sessions"
+                android:text="Sessions" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:fontFamily="@font/fsans_light"
+                android:gravity="center"
+                android:text="Your class schedule."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:onClick="menuClicked"
+            android:id="@+id/menu_item_resources">
+
+            <TextView
+                android:id="@+id/resource_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="40dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="-12dp"
+                android:textColor="#e9b443"
+                android:fontFamily="@font/fsans_bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:fontFamily="@font/fsans_bold"
+                android:id="@+id/menu_resources"
+                android:text="Resources" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:fontFamily="@font/fsans_light"
+                android:gravity="center"
+                android:text="Notes, links, images"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#fff"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:id="@+id/menu_item_activities"
+            android:onClick="menuClicked">
+
+            <TextView
+                android:id="@+id/activities_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="40dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginBottom="-12dp"
+                android:textColor="#12cd63"
+                android:fontFamily="@font/fsans_bold"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:fontFamily="@font/fsans_bold"
+                android:id="@+id/menu_activities"
+                android:text="Activities" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:fontFamily="@font/fsans_light"
+                android:gravity="center"
+                android:text="Quizes, discussions..."/>
+        </LinearLayout>
+    </GridLayout>
+
+</LinearLayout>

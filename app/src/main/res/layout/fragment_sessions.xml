@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/no_sessions_tview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No sessions found."
+        android:textSize="24dp"
+        android:textColor="#aaa"
+        android:fontFamily="@font/fsans"
+        android:padding="24dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sessions_rview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="22dp"
+        android:clipToPadding="false"/>
+</LinearLayout>

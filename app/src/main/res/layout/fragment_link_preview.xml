@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_margin="12dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/resource_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#ddd"
+            android:scaleType="centerCrop"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3888"
+            android:id="@+id/youtube_play"
+            android:visibility="gone">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/youtube_icon"
+                android:layout_width="64dp"
+                android:layout_height="45dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/resource_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#555"
+        android:textSize="20dp"
+        android:text="Enter or paste link"
+        android:singleLine="true"
+        android:fontFamily="@font/fsans"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/resource_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="Link goes here"
+        android:fontFamily="@font/fsans"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

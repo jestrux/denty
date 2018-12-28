@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_selector">
+
+    <RelativeLayout
+        android:id="@+id/reference_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff005e">
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_delete_subject" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/deleteIcon"
+            android:text="DELETE"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reference_foreground"
+        android:background="#fefefe">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/type_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="16dp"
+                android:tint="#fff"
+                android:src="@drawable/ic_resource_ref"
+                android:background="@drawable/circular_bg"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                tools:text="French Cuisine"
+                android:layout_centerVertical="true"
+                android:textColor="#333"
+                android:textSize="20dp"
+                android:fontFamily="@font/fsans" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/ref_separator"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f0f0f0"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</FrameLayout>

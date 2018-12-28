@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_foreground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="#fefefe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/message_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="James Bsay"
+        android:textColor="#333"
+        android:textSize="20dp"
+        android:fontFamily="@font/fsans" />
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/message_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:background="#ddd"/>
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/message_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="How about some chicas?"
+        android:textColor="#333"
+        android:textSize="18dp"
+        android:fontFamily="@font/fsans_light" />
+</LinearLayout>

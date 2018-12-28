@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font android:fontStyle="normal" android:fontWeight="100" android:font="@font/fsans_light"
+        app:fontStyle="normal" app:fontWeight="100" app:font="@font/fsans_light"/>
+
+    <font android:fontStyle="normal" android:fontWeight="300" android:font="@font/fsans"
+        app:fontStyle="normal" app:fontWeight="300" app:font="@font/fsans"/>
+
+    <font android:fontStyle="normal" android:fontWeight="500" android:font="@font/fsans_bold"
+        app:fontStyle="normal" app:fontWeight="500" app:font="@font/fsans_bold"/>
+
+    <font android:fontStyle="normal" android:fontWeight="700" android:font="@font/fsans_black"
+        app:fontStyle="normal" app:fontWeight="700" app:font="@font/fsans_black"/>
+</font-family>

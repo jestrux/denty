@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/session_day"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        tools:text="Mon"
+        android:textColor="#333"
+        android:textSize="22dp"
+        android:fontFamily="@font/fsans_bold"
+        android:visibility="visible"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:id="@+id/session_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFF"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/session_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Applied Research"
+            android:textColor="#333"
+            android:textSize="20dp"
+            android:fontFamily="@font/fsans" />
+
+        <TextView
+            android:id="@+id/session_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="08:00 - 10:00"
+            android:textColor="#333"
+            android:textSize="28dp"
+            android:fontFamily="@font/fsans" />
+
+        <TextView
+            android:id="@+id/session_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hall 344"
+            android:textColor="#333"
+            android:textSize="18dp"
+            android:fontFamily="@font/fsans" />
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"/>
+</LinearLayout>

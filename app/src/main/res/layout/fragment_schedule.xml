@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ScheduleFragment"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/main_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Schedule"
+                android:textColor="#000"
+                android:fontFamily="@font/fsans_black"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+
+            <ImageView
+                android:id="@+id/action_add"
+                android:layout_marginRight="16dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_add_item"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/type_week_tview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="Full Week"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@drawable/sked_type_selector"
+                android:fontFamily="@font/fsans"/>
+
+            <TextView
+                android:id="@+id/type_day_tview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Single Day"
+                android:textColor="@drawable/sked_type_selector"
+                android:fontFamily="@font/fsans"/>
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="For Exams"
+                android:textColor="@drawable/sked_type_selector"
+                android:fontFamily="@font/fsans"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:id="@+id/week_days_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:paddingTop="12dp"
+                android:clipToPadding="false"
+                android:id="@+id/day_list"
+                android:layout_width="70dp"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:visibility="visible"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ededed"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/sessions_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

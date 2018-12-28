@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.akilsw.waky.denti.MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/top_coordinator">
+
+    <FrameLayout
+        android:id="@+id/fragment_placeHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:paddingBottom="64dp"/>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:bb_tabXmlResource="@xml/bottom_bar_tabs"
+        app:bb_inActiveTabAlpha="0.8"
+        app:bb_activeTabColor="#000"
+        android:elevation="0dp"
+        app:layout_behavior="com.akilsw.waky.denti.MoveUpwardBehavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

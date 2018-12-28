@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akilsw.waky.denti.CreateScheduleActivity"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:tint="#555"
+            android:layout_marginLeft="12dp"
+            android:onClick="closeActivity"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textSize="21dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:fontFamily="@font/fsans"
+            android:onClick="closeActivity"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textSize="21dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#000"
+            android:fontFamily="@font/fsans"
+            android:onClick="submitData"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:paddingTop="42dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="24dp"
+            android:text="New Session"
+            android:textColor="#000"
+            android:fontFamily="@font/fsans_bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="DAY"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/fsans_bold"/>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/day_picker"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:ms_dropdown_max_height="160dp"
+                    android:fontFamily="@font/fsans"
+                    app:ms_background_color="#eee"
+                    android:hint="Choose Day"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="SUBJECT"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/fsans_bold"/>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/subject_picker"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:ms_dropdown_max_height="160dp"
+                    android:fontFamily="@font/fsans"
+                    app:ms_background_color="#eee"
+                    android:hint="Choose Subject"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="TYPE"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/fsans_bold"/>
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/type_picker"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:ms_dropdown_max_height="160dp"
+                    android:fontFamily="@font/fsans"
+                    app:ms_background_color="#eee"
+                    android:hint="Choose Type"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="VENUE"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/fsans_bold"/>
+
+                <EditText
+                    android:id="@+id/venue_input"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fsans"
+                    android:hint="Enter Venue"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="START AT"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/fsans_bold"/>
+
+                <TimePicker
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/start_time"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"
+                    android:scaleX="1.10"
+                    android:scaleY="1.10"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginBottom="-32dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="ENDS AT"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/fsans_bold"/>
+
+                <TimePicker
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/end_time"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginBottom="-32dp"
+                    android:timePickerMode="spinner"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

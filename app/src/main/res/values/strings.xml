@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Denti</string>
+
+    <string-array name="create_resource_list">
+        <item>Reference</item>
+        <item>Image</item>
+        <item>File</item>
+        <item>Link</item>
+        <item>Video</item>
+    </string-array>
+
+    <string-array name="manage_resource_options">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string name="default_topic">walls:nbcthevoice</string>
+    <string name="default_url">http://192.168.8.100:4000/walls/nbcthevoice</string>
+</resources>
